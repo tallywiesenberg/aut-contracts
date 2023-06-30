@@ -34,7 +34,12 @@ module.exports = {
     },
   },
   networks: {
-    hardhat: {},
+    hardhat: {
+      forking: {
+        url: process.env.NODE_URL,
+        blockNumber: 9267011
+      },
+    },
     mumbai: {
       url: "https://rpc-mumbai.maticvigil.com/",
       accounts: [process.env.DEV_PK],

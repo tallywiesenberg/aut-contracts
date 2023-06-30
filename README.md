@@ -8,9 +8,10 @@ Below, you'll find a simple walkthrough to get started using Āut's Smart Contra
 
 # Setup 
 
-1. Create .env file and put your testing private key there
+1. Create .env file and put your testing private key and forking node url there
     ```
-    PRIVATE_KEY='your_private_key'
+    DEV_PK='your_private_key'
+    NODE_URL='your_node_url'
     ```
 
 2. Install dependencies
@@ -22,8 +23,8 @@ Below, you'll find a simple walkthrough to get started using Āut's Smart Contra
 4. In a separate terminal (optional)
 `npx hardhat node`
 
-5. Run tests (optional)
-`npm run test`
+5. **Run tests**
+`npx hardhat test --network hardhat`
 
 You're ready to go! 🚀🚀🚀
 

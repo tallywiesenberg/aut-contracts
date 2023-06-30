@@ -46,7 +46,7 @@ describe("DAOExpander", function () {
       pluginRegistry = await PluginRegistryFactory.deploy(moduleRegistry.address);
 
     });
-    it("Should fail if arguemnts are incorret", async function () {
+    it("Should fail if arguemnts are incorrect", async function () {
       const DAOExpander = await ethers.getContractFactory("DAOExpander");
       await expect(
         DAOExpander.deploy(
