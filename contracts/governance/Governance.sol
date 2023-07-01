@@ -3,10 +3,6 @@ pragma solidity >=0.8.4;
 
 import {IAutID} from "contracts/IAutID.sol";
 
-// A = 10
-// B = 
-// C = 
-
 contract Governance {
 
 
@@ -54,6 +50,8 @@ contract Governance {
         deployer = msg.sender;
 
         weights[1] = 10;
+        weights[2] = 21;
+        weights[3] = 69; //sums to 100?
 
     }
 
